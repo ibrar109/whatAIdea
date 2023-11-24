@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="flex">
+        <div class="col-span-6 m-10 ">
+            <div class="col-span-6 set_2 font-bold text-4xl sm:text-left ">
+             <h1 class="text-black px-14"><a href="index.html">what<span class="text-blue-700">AI</span>dea</a></h1>
+        </div>
+        <h2 class="font-semibold text-xl mr-16 ml-14 mt-6 mb-auto">Sign in to your account</h2>
+        <p class="mr-16 ml-14">Don’t have an account?<a href="book_a_demo.html" class="text-blue-500 underline">Book a demo</a></p>
+        <form action="">
+                <label class="block ml-14 my-6">
+                <span class=" block text-sm font-medium text-slate-700">Email </span>                  
+                <input type="email" id="" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-80 rounded-md sm:text-sm focus:ring-1"  >
+                </label>
+                <label class="block mr-14 ml-14 mt-4 mb-8">
+                    <span class=" block text-sm font-medium text-slate-700">password </span>                  
+                    <input type="password" id="" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-80 rounded-md sm:text-sm focus:ring-1"  >
+                </label>
+                <label for="" class="mr-14 ml-14 mt-1  ">
+                <input type="checkbox" >Remember me &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forget.html" class="text-blue-500 underline ">Forget your password</a>
+            </label>
+            <div class=" pt-3 pb-1 pr-10 pl-14">
+                <button class="my-6 group col-span-6 inline-flex font-neue items-center justify-center rounded-full py-3 px-10 text-sm font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#0020CE] text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600 w-80" type="submit">
+                  Sign in
+                  <svg class="h-7" xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                    <path d="M33.2917 15.667L41.125 23.5003M41.125 23.5003L33.2917 31.3337M41.125 23.5003H5.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div><p class="px-44">OR</p>
+              <div class=" pt-3 pb-1 pr-10 pl-14">
+              
+              <a href="/auth-providers/google/init" class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold bg-transparent text-[#0020CE] hover:text-blue-500 border-[#0020CE] hover:border-blue-500 border active:text-[#0020CE] w-80">
+                <svg class="me-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <rect x="0.752686" y="0.436523" width="24" height="24" fill="url(#pattern0)"></rect>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_400_81" transform="scale(0.0416667)"></use>
+                        </pattern>
+                        <image id="image0_400_81" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMvSURBVEiJpZZPbBR1FMc/b2a2LFIrWStr1/4xFBaNtF404WAjGkVZLZ4kG9ISPRqMhoPeUKBEExNivWqIMS1Gi8R/SbVEYgnBpMFoQimHlt2YiEvZtgvVXVncmXkeaJud2dndJnyTubzve5/3e/ll3oxQQ/r8Qw9iuEmEJ4FuIHI5b4cNoRQSboSEsyHL/KD51MxENYYEghMPd2C476GaBIxybzpf8gIE7jJlOozV13x6+ryfZfgDmti8B3EuoLonyK/IVyjYGr/hlCZmn9n4fs0JNBHfj3C02mRBE/hh98ut+5rGM/MVE+gL8WQdeAY4Gza4bonYQQmNljFeDl+ZQF/qbMM2J4F7fDWKMoS6g/LD5d/LjeyzGxP/uXxYsDUOcHfIOBP7KbU9aCr0vHmMk9HNTDY+DoSXvDyqr8jozMkqE91utKPzDXU0Hj2dfj3IF71EB0oKMMlZV/i0Nc21hh5U+2R05vNa8FVJL/G2TqGe5+t1g3cMXpKF8lRFdFNhuFZR5OBCk1PMm/Xgi+H2f0Sn+BNoLYtn5BEeqFa04UCmD2GoHnxJvxhAsy+YqlUh0L5KOEBX3Tf1DtVgAPO+YGetChfc1fNlwQIm8d5BTCd5TLr4NbBEzRMYdhuI5Ym7tKqQ8GbrlIUwjrKzPPyHs64fCoENskeiKWCfP77h3cxnqO8wcEZ0inYgDZi2ypUDC1vSH//d0aNo//XeU8eDR/cq+s5fvYp8i3ePuWo4WwSgeNH45Pt/o5venNu6regay6uigMiruRd/PLEK+JfAWo+hfJUdiL0sAJHRna047kUClp3CsAmD871jv5Ub648/3S+lNa+F0se2UbmB82KYj147GE2vGJHvntuN8EVA8rKuAilnrtgtjjaqe3vVW07PtDm7L+45u7I3OxAbhrLvQW7X2AiwH/xXtaIW4AlK2rQMB7AbznVi5W+uwJG3luGeBgC53rGPUJLAYpUmlXJcsxQ7NAssqkoye7jlaLld8Sbndo2N4GiXwhDg1G0g4IZmi7bhbp0baBkJsKsr8s2ONjWNpOBuB+kGvde5WlyLiCOW5DCZMJEjC3t/rvrb8j9aeDScVZZt1AAAAABJRU5ErkJggg=="></image>
+                    </defs>
+                </svg>
+                Continue with Google
+            </a>
+        </div>
+        </form>
+    </div>
+    <div class="grid col-span-6 ml-32 md:w-1/2">
+      <img src="resources/Screenshot 2023-11-21 144147.jpg" alt="">
+    </div>
+    </div>
+</body>
+</html>

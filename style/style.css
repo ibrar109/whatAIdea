@@ -1,0 +1,37 @@
+.blue-button {
+    background-color: blue; /* Blue background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding */
+    color: white;
+  }
+  hr{
+    color: black;
+  }
+
+@media (min-width: 425px) {
+    .responsive {
+        align-items: flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+    p,h1 {
+       align-content: flex-start;
+       display: block;
+    }
+    }
+
+.set{
+   width: 100%;
+   display: flex; 
+}
+.set_1{
+width: 40%;
+margin: 5%;
+
+}
+.set_2{
+width: 40%;
+margin: 5%;
+text-decoration: none;
+/* float: left; */
+}
