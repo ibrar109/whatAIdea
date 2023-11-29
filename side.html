@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Dashboard</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+  <div class="flex h-screen w-full">
+    <!-- Sidebar -->
+    <div class="bg-white flex-col flex w-1/2">
+      <div class="p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 151 151" fill="none">
+            <path d="M101.104 0H0V101.104H101.104V0Z" fill="#E3E8FD"/>
+            <path d="M150.999 49.8955H101.104V101.104H150.999V49.8955Z" fill="#0020CE"/>
+            <path d="M150.999 101.104H101.104V151H150.999V101.104Z" fill="#E3E8FD"/>
+            <path d="M101.105 101.104H49.8965V151H101.105V101.104Z" fill="#0020CE"/>
+            </svg>
+        <!-- Sidebar links -->
+        <ul class="mt-4">
+          <li class="mb-2">    
+            <a href="#" class="block py-2 px-6 ">Introduction</a>
+            <!-- <div class="flex items-center"> -->
+          </li>
+            <li class="mb-2">
+                <div class="flex items-center">
+                    <svg class="w-3 h-3 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+                    </svg>
+                <a href="#" class="toggle-dropdown block py-2 px-4">Products</a>
+                </div>
+                <ul class="dropdown" style="display: none;">
+                    <!-- Dropdown content here -->
+                    <li class="block py-2 px-4 "><a href="#" class="drop">SWOTAI</a></li>
+                    <li class="block py-2 px-4 "><a href="#" class="drop">CYBERAI</a></li>
+                </ul>
+            </li>
+            <li class="mb-2">
+                <div class="flex items-center"> <!-- Container for the icon and link -->
+                    <svg class="w-3 h-3 text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+                    </svg>
+                    <a href="#" class="toggle-dropdown block py-2 px-4">Setting</a>
+                </div>
+            </li>
+                <ul class="dropdown" style="display: none;">
+                    <!-- Dropdown content here -->
+                    <li class="block py-2 px-4 "><a href="#" class="drop">My Account</a></li>
+                    <li class="block py-2 px-4 "><a href="#" class="drop">My Download</a></li>
+                </ul>
+            </li>
+          <li class="mb-2">
+            <a href="#" class="block py-2 px-6 ">Support</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="block py-2 px-6 ">FAQ</a>
+          </li>
+          <!-- Add more sidebar links as needed -->
+        </ul>
+      </div>
+      <!-- Sidebar footer -->
+      <div class="hover:bg-gray-700 flex items-center p-4 mt-auto"> <!-- Container for the icon and link -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 131 131" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M117.9 65.5001C117.9 79.3974 112.379 92.7256 102.552 102.552C92.7251 112.379 79.397 117.9 65.4996 117.9C51.6023 117.9 38.2741 112.379 28.4472 102.552C18.6203 92.7256 13.0996 79.3974 13.0996 65.5001C13.0996 51.6028 18.6203 38.2746 28.4472 28.4477C38.2741 18.6208 51.6023 13.1001 65.4996 13.1001C79.397 13.1001 92.7251 18.6208 102.552 28.4477C112.379 38.2746 117.9 51.6028 117.9 65.5001ZM78.5996 45.8501C78.5996 49.3244 77.2194 52.6565 74.7627 55.1132C72.306 57.5699 68.9739 58.9501 65.4996 58.9501C62.0253 58.9501 58.6932 57.5699 56.2365 55.1132C53.7798 52.6565 52.3996 49.3244 52.3996 45.8501C52.3996 42.3758 53.7798 39.0437 56.2365 36.587C58.6932 34.1303 62.0253 32.7501 65.4996 32.7501C68.9739 32.7501 72.306 34.1303 74.7627 36.587C77.2194 39.0437 78.5996 42.3758 78.5996 45.8501ZM65.4996 72.0501C59.2287 72.0488 53.0892 73.848 47.8108 77.2338C42.5324 80.6196 38.337 85.4496 35.7233 91.1499C39.4088 95.4375 43.9781 98.8773 49.1177 101.233C54.2573 103.59 59.8457 104.806 65.4996 104.8C71.1535 104.806 76.7419 103.59 81.8815 101.233C87.0211 98.8773 91.5904 95.4375 95.2759 91.1499C92.6622 85.4496 88.4668 80.6196 83.1884 77.2338C77.91 73.848 71.7706 72.0488 65.4996 72.0501Z" fill="#0020CE"/>
+          </svg>
+       <P class="w-50 block py-2  ">First Name </p>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex  lg:flex-row p-4 lg:p-8 bg-gray-200">
+      <!-- Main content goes here -->
+      <div class="lg:w-1/3  bg-blue-700 rounded-3xl lg:h-1/2 sm:h-1/2 mr-14 text-white">
+        <div class="p-8 lg:p-10 ">
+          <h2 class="text-2xl text-white font-semibold mb-4">Welcome</h2>
+          <p>At WhatAIdea we simplify complexity. Helping businesses in critical sectors, we ensure they navigate challenges with ease and maintain an edge using Gen AI and Automation.</p>
+        </div>
+      </div>
+    
+      <div class="lg:w-3/5 lg:ml-4 mt-4 lg:mt-0  ">
+        <div class="bg-white rounded-3xl ">
+          <div class="p-8 pr-96">
+            <h1 class="text-2xl font-semibold mb-10 lg:w-96">Meet your time-saving experts for doc analysis.</h1>
+            <p class="text-blue-500 w-52 font-semibold">Choose Your Tool:</p>
+          </div>
+          <div>
+            <div class="lg:flex lg:mt-36  pl-14">
+              <div class="bg-gray-100 rounded-3xl w-52 h-48 p-6 lg:mr-4 mb-10 ml-12">
+                <h1 class="text-2xl font-semibold mt-2 pl-7">SWOT<span class="text-blue-500">AI</span></h1>
+                <p class="justify-center items-center p-">Swift insights from &nbsp; &nbsp;&nbsp; complex reports</p>
+                  <li class="mt-4 group inline-flex items-center justify-center rounded-full py-1.5 px-4 text-[12px] sm:text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-500 text-white "><a href="#">Get Started Today</a></li>
+              </div>
+    
+              <div class="bg-gray-100 rounded-3xl w-52 h-48 p-6 lg:ml-4 mt-4 lg:mt-0 ">
+                <h1 class="text-2xl font-semibold mt-2 pl-7">CYBER<span class="text-blue">AI</span></h1>
+                <p class="w-44 mt-3">Navigate with precision</p>
+                <li class="mt-7 group inline-flex items-center justify-center rounded-full py-1.5 px-4 text-[12px] sm:text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-500 text-white "><a href="#">Get Started Today</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $(".toggle-dropdown").click(function(){
+    $(".dropdown").toggle();
+  });
+    });
+  </script>
+</body>
+</html>
